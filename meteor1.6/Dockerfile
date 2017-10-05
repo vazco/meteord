@@ -1,5 +1,5 @@
 FROM abernix/meteord:node-8.4.0-base
-MAINTAINER Jesse Rosenberger
+MAINTAINER Michal Wanat
 
 ARG NODE_VERSION
 ENV NODE_VERSION ${NODE_VERSION:-8.4.0}

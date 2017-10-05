@@ -1,5 +1,5 @@
 FROM meteorhacks/meteord:base
-MAINTAINER MeteorHacks Pvt Ltd.
+MAINTAINER Michal Wanat
 
 ENV METEORD_DIR /opt/meteord
 
