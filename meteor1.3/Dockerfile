@@ -1,10 +1,5 @@
-FROM meteorhacks/meteord:base
+FROM vazco/meteord:meteor1.3-base
 MAINTAINER Michal Wanat
-
-ENV METEORD_DIR /opt/meteord
-
-COPY scripts $METEORD_DIR
-RUN bash $METEORD_DIR/init.sh
 
 ONBUILD COPY ./ /app
 ONBUILD RUN bash $METEORD_DIR/on_build.sh
