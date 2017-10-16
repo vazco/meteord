@@ -1,5 +1,5 @@
-FROM vazco/meteord:meteor1.3-base
+FROM meteorhacks/meteord:base
 MAINTAINER Michal Wanat
 
-ONBUILD COPY ./ /app
-ONBUILD RUN bash $METEORD_DIR/on_build.sh
+COPY scripts $METEORD_DIR
+RUN bash $METEORD_DIR/init.sh

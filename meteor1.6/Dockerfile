@@ -1,5 +1,5 @@
-FROM vazco/meteord:meteor1.6-base
+FROM abernix/meteord:node-8.4.0-base
 MAINTAINER Michal Wanat
 
-ONBUILD COPY ./ /app
-ONBUILD RUN bash $METEORD_DIR/lib/build_app.sh
+COPY scripts $METEORD_DIR
+RUN bash $METEORD_DIR/init.sh
