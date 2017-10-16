@@ -12,4 +12,5 @@ ln -s -f /usr/local/share/phantomjs-${PHANTOMJS_VERSION}-linux-${ARCH}/bin/phant
 ln -s -f /usr/local/share/phantomjs-${PHANTOMJS_VERSION}-linux-${ARCH}/bin/phantomjs /usr/local/bin/phantomjs
 ln -s -f /usr/local/share/phantomjs-${PHANTOMJS_VERSION}-linux-${ARCH}/bin/phantomjs /usr/bin/phantomjs
 
+rm -rf /usr/local/share/phantomjs-1.9.8-linux-${ARCH}
 rm $PHANTOMJS_TAR_FILE
