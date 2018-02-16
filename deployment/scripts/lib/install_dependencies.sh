@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+apt-get install curl
+
 npm cache clear --force
 
 npm install --global npm
